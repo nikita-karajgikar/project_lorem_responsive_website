@@ -1,0 +1,189 @@
+.main {
+  /* padding: 80px 75px 140px 75px; */
+  padding: 80px 300px 140px ;
+
+  @media screen and (max-width: 992px) {
+    padding: 0 20px;
+  }
+}
+
+.intro_heading_mob {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about_us {
+  padding: 200px 0;
+  text-align: left;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  @media screen and (max-width: 992px){
+    padding: 50px 0;
+  }
+}
+
+.about_us:hover {
+    background-image: url("../../public/aboutUsBG.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about_us_main{
+  padding: 80px 500px 140px 300px;
+
+  @media screen and (max-width: 992px){
+    padding: 120px 12px 120px 12px;
+    gap: 10px;
+  }
+}
+
+.about_us_heading_mob {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.about_us_left {
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 110px;
+    letter-spacing: 0em;
+}
+
+.about_us_right {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.2px;
+  padding-top: 100px;
+
+  @media screen and (max-width:992px) {
+    padding-top: 50px;
+  }
+}
+  
+.marquee {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 200px;
+  overflow-x: hidden;
+  background-image: url("../../public/gradient_background.png");
+  height: 48px;
+  padding: 10px;
+
+  @media screen and (max-width:992px) {
+    font-size: 14px;
+  }
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 32s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.info_heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 110px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+
+  @media screen and (max-width:992px) {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+ 
+.faq_heading{
+  padding: 80px 450px 140px 250px;
+
+  @media screen and (max-width:992px) {
+    padding: 120px 20px 0;
+  }
+}
+
+.accordion {
+  /* max-width: 1550px; */
+  margin: 2rem auto;
+}
+
+.accordion_item {
+  padding: 15px 0;
+}
+
+.accordion_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 24px;
+  padding: 15px 250px;
+
+  @media screen and (max-width:992px) {
+    padding: 0;
+    font-size: 18px;
+  }  
+}
+
+.accordion_title_bg {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 24px;
+  padding: 15px 250px;
+  background-image: url("../../public//gradient_background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (max-width:992px) {
+    background-image: none;
+    padding: 15px 0;
+    font-size: 18px;
+  }  
+}
+
+.accordion_content {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.21px;
+  text-align: left;
+  padding: 1rem 250px;
+
+  @media screen and (max-width:992px) {
+    padding: 1rem 0;
+    font-size: 16px;
+  }  
+}
+
+@media screen and (max-width: 700px) {
+  .accordion {
+    width: 90%;
+  }
+}
